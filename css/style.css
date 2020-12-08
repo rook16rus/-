@@ -1,0 +1,117 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: normal;
+    color: #000;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.section-title {
+    font-family: "Cormorant", serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000;
+
+    margin: 0;
+}
+
+.main-header {
+    box-shadow: 0 4px 20px rgba(35, 35, 36, 0.15);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 23px 0;
+}
+
+.logo {
+    display: flex;
+}
+
+.menu-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 550px;
+
+    list-style: none;
+    margin: 0 -36px 0 0;
+    padding: 0;
+}
+
+.menu-item {
+    margin-right: 36px;
+}
+
+.menu-link {
+    position: relative;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.13em;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu-link:hover, .menu-link:focus {
+    opacity: 0.6;
+}
+
+.menu-link:active {
+    opacity: 0.3;
+}
+
+.menu-link-current::after {
+    content: "";
+
+    width: 110%;
+    height: 0;
+    border-top: 2px solid #000;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a[href^="tel"] {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: right;
+    text-decoration: none;
+    color: #000;
+}
+
+a[href^="tel"]:hover, a[href^="tel"]:focus {
+    opacity: 0.6;
+}
+
+a[href^="tel"]:active {
+    opacity: 0.3;
+}
