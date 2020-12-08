@@ -39,6 +39,10 @@ body {
     float: left;
 }
 
+.right-floated {
+    float: right;
+}
+
 .clearfix::after {
     content: "";
     display: block;
@@ -344,6 +348,9 @@ p.note {
 }
 
 .aside-text {
+    display: flex;
+    flex-direction: column;
+
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
@@ -381,4 +388,117 @@ p.note {
 
 .socials-link {
     font-size: 0;
+}
+
+.restaurant-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 54px;
+    background-color: #F1F1F2;
+    border-radius: 0 60px 0 60px;
+}
+
+.slider {
+    display: flex;
+
+    border-radius: 50%;
+    border: 5px solid #6BB9B5;
+
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.slider::before, .slider::after {
+    content: "";
+
+    width: 20px;
+    height: 10px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider::before {
+    background: url("../img/arrow-left.svg") no-repeat center;
+    left: -40px;
+}
+
+.slider::after {
+    background: url("../img/arrow-right.svg") no-repeat center;
+    right: -40px;
+}
+
+.restaurant-slider h3, p.restaurant-name {
+    font-family: "Cormorant", serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.restaurant-slider h3 {
+    margin-bottom: 10px;
+}
+
+p.restaurant-name {
+    margin-top: 5px;
+}
+
+.rate-aside {
+    position: relative;
+    padding-top: 20px;
+}
+
+.rate-aside::before, .rate-aside::after {
+    content: "";
+
+    width: 48px;
+    height: 6px;
+    background: url("../img/ellipsis-icon.png") no-repeat center;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rate-aside::before {
+    top: 0;
+}
+
+.rate-aside::after {
+    bottom: -25px;
+}
+
+.rate-list {
+    display: flex;
+    align-items: flex-start;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rate-item {
+    width: 28px;
+    height: 28px;
+    margin-right: 27px;
+    font-size: 0;
+}
+
+.rate-item:last-child {
+    margin-right: 0;
+}
+
+.rate-item-like {
+    background: url("../img/like-icon.png") no-repeat center;
+}
+
+.rate-item-dislike {
+    background: url("../img/dislike-icon.png") no-repeat center;
 }
