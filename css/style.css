@@ -71,7 +71,7 @@ body {
     display: flex;
 }
 
-.menu-list {
+.header-menu-list {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -82,7 +82,7 @@ body {
     padding: 0;
 }
 
-.menu-item {
+.header-menu-item {
     margin-right: 36px;
 }
 
@@ -675,6 +675,7 @@ p.restaurant-name {
 
 .posts-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 
     list-style: none;
@@ -693,4 +694,18 @@ p.restaurant-name {
 .posts-text {
     margin: 15px 0 0;
     color: #000;
+}
+
+.main-footer {
+    padding: 30px 0 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+    padding: 0;
 }
