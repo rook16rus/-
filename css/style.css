@@ -568,3 +568,21 @@ p.restaurant-name {
     color: #000;
 }
 
+.quote {
+    margin: 30px 0;
+    padding: 0 0 0 35px;
+    border-left: 5px solid #000;
+}
+
+.quote p {
+    font-family: "Cormorant", serif;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 45px;
+
+    margin: 0 0 20px;
+}
+
+.quote cite {
+    opacity: 0.5;
+}
