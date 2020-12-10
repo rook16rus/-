@@ -248,7 +248,7 @@ a[href^="tel"]:active {
     background: url("../img/views-icon.svg") no-repeat center;
 }
 
-.main-article p {
+.rule-text {
     margin: 0 0 30px;
 }
 
@@ -501,4 +501,66 @@ p.restaurant-name {
 
 .rate-item-dislike {
     background: url("../img/dislike-icon.png") no-repeat center;
+}
+
+.aside-title {
+    font-family: "Cormorant", serif;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+    text-align: center;
+
+    margin: 67px 0 20px;
+}
+
+.excursions-list {
+    display: flex;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.excursions-item {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 20px;
+    width: 278px;
+}
+
+.excursions-item:last-child {
+    margin-right: 0;
+}
+
+.excursion-name {
+    font-size: 16px;
+    line-height: 32px;
+    margin: 10px 0 0;
+}
+
+.aside-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+.paging {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.more-excursions-link {
+    margin-top: -35px;
+    align-self: flex-end;
+
+    font-size: 16px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #000;
 }
