@@ -28,7 +28,7 @@ body {
 .section-title {
     font-family: "Cormorant", serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 45px;
     color: #000;
 
@@ -259,7 +259,7 @@ p.main-article-lead {
     margin-bottom: 82px;
 }
 
-.main-article-lead::before, .main-article-lead::after, .note::before, .note::after {
+.main-article-lead::before, .main-article-lead::after, .note::before, .note::after, .posts::before {
     content: "";
 
     width: 48px;
@@ -318,6 +318,7 @@ p.main-article-lead {
 }
 
 .rule .section-title {
+    font-size: 30px;
     margin-left: 64px;
     margin-bottom: 17px;
 }
@@ -615,14 +616,81 @@ p.restaurant-name {
     opacity: 0.5;
 }
 
-.rule:nth-of-type(7) .section-title {
+.rules-item:nth-of-type(7) .section-title {
     margin-bottom: 25px;
 }
 
-.rule:nth-of-type(7) img {
+.rules-item:nth-of-type(7) img {
     margin-top: 7px;
 }
 
-.rule:nth-of-type(7) .rule-text:first-of-type{
+.rules-item:nth-of-type(7) .rule-text:first-of-type{
     margin-bottom: 0;
+}
+
+.links {
+    padding-bottom: 120px;
+}
+
+.links .section-title {
+    font-size: 30px;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+.links-list {
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links-item {
+    margin-bottom: 10px;
+}
+
+.links-item a {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0094FF;
+    text-transform: lowercase;
+}
+
+.posts {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.posts::before {
+    top: -30px;
+}
+
+.posts-title {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.posts-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin: 0 -40px 0 0;
+}
+
+.posts-item {
+    max-width: 235px;
+    margin-right: 40px;
+}
+
+.posts-item a {
+    text-decoration: none;
+}
+
+.posts-text {
+    margin: 15px 0 0;
+    color: #000;
 }
