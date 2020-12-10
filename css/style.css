@@ -37,6 +37,7 @@ body {
 
 .left-floated {
     float: left;
+    margin-right: 20px;
 }
 
 .right-floated {
@@ -612,4 +613,16 @@ p.restaurant-name {
 
 .quote cite {
     opacity: 0.5;
+}
+
+.rule:nth-of-type(7) .section-title {
+    margin-bottom: 25px;
+}
+
+.rule:nth-of-type(7) img {
+    margin-top: 7px;
+}
+
+.rule:nth-of-type(7) .rule-text:first-of-type{
+    margin-bottom: 0;
 }
